@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fbfcfd;
+    font-family: 'realeway';
+    margin-top: 95px;
+    margin-left: 0;
+    margin-right: 0;
+}
+header{
+    align-items: center;
+    background-color: black;
+    border-bottom: 3px solid #ffffffa1;
+    color: white;
+    height: 90px;
+    justify-content: space-between;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; 
+    z-index: 2;
+}
+.icon {
+    height: 100px;
+    width: 60px;
+}
+.cabecera{
+    display: flex;
+}
+.logo img {
+    height: 90px;
+    margin: 0;
+    width: 220px;
+}
+.monroe{
+    align-items: center;
+    float: right;
+    height: 80px;
+    width: 206px;
+}
+.Menu{
+    /* align-items: center;
+    background-color: #fbfcfd;
+    border-radius: 5px;
+    height: 3.5vh;
+    margin: auto;
+    padding-right: 20px;
+    width: 50vw; */
+    color: #fbfcfd;
+    height: 80px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.nav_container{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+.nav_label,.nav_input{
+    display: none;
+}
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+}
+.menuLink{
+    /* letter-spacing: 3px;
+    margin-left: 20px;*/
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    color: #fbfcfd;
+    font-size: 2vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.menuLink::after{
+    background-color: #fbfcfd;
+    clip-path: var(--clippy);
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    transition: clip-path .4s;
+    width: 90%;
+}
+.menuLink:hover{
+    /* border: 0px, 5px solid bisque;
+     color:  #424242e0; 
+    text-decoration: underline; */
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+.menuLink:active{
+    color: crimson;
+    text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+    body{
+        margin-top: 0px;
+    }
+    header{
+        height: 80px;
+        position: fixed;
+        left: 0;
+        margin: 0;
+        right: 0;
+        top: 0; 
+        width: 100%;
+    }
+.cabecera{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Menu{
+    height: 30px;
+    margin: 0px 0px;
+}
+.logo img {
+    height: 50px;
+    padding: 0px 0px;
+    width: 160px;
+}
+.monroe{
+    display: none;
+}
+.nav_container{
+    height: 30px;
+    width: 40px;
+}
+.nav_label{
+    display: block;
+    cursor: pointer;
+}
+.nav_menu{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.800);
+    bottom: 0;
+    clip-path: circle(0 at center);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    top: 90px;
+    transition: clip-path 1s ease-in-out;
+    width: 100%;
+}
+.nav_input:checked + .nav_menu{
+    clip-path: circle(100% at center);
+}
+.menuLink:target{
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+}
