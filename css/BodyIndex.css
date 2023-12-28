@@ -115,18 +115,17 @@ html{scroll-behavior: smooth;}
     list-style: none;
 }
 .cartas a{
-    color: bisque;
+    color: #3498DB;
     text-decoration: none;
 }
 .cartas a:hover{
-    color: bisque;
     text-decoration: underline;
 }
 .cartas p{font-size: 3vh;}
 .cartas{
     background-position: center center;
     background-size: cover;
-    margin: 0px 40px;
+    margin: 0px 100px;
     padding: 150px;
 }
 .cartas:first-child{
