@@ -17,7 +17,7 @@ html{scroll-behavior: smooth;}
         0deg,
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5)
-    ),url("/img/estrella.jpg");
+    ),url("img/estrella.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,21 +133,21 @@ html{scroll-behavior: smooth;}
     0deg,
     rgb(0,0,0,0.5),
     rgb(0,0,0,0.5)
-    ),url("/img/docs.jpg");
+    ),url("img/docs.jpg");
 }
 .cartas:nth-child(2){
     background-image: linear-gradient(
     0deg,
     rgb(0,0,0,0.5),
     rgb(0,0,0,0.5)
-    ),url("/img/inscrip.jpg");
+    ),url("img/inscrip.jpg");
 }
 .cartas:nth-child(3){
     background-image: linear-gradient(
     0deg,
     rgb(0,0,0,0.5),
     rgb(0,0,0,0.5)
-    ),url("/img/edad.jpg");
+    ),url("img/edad.jpg");
 }
 #PDS{margin-top: 10px;}
 .pdsHead h1{
@@ -186,7 +186,7 @@ details{
 .Semestre4 details{background-color: #d6e86d;}
 summary{list-style: none;}
  summary::before{
-    content: url("/assets/Down.svg"); 
+    content: url("assets/Down.svg"); 
     margin: 5px;   
 }
 /* details[open] summary::after{
