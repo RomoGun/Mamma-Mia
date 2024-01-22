@@ -16,7 +16,8 @@
 
 var wpp = document.querySelector('#wpp');
 wpp.addEventListener('click',() =>{
-  alert('8342660332');
+  navigator.clipboard.writeText('8342660332');
+  alert('El numero 8342660332 ha sido copiado en el portapapeles');
 });
 
 var links = document.querySelectorAll('.menuLink');
