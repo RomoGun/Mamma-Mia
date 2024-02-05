@@ -488,11 +488,11 @@ li:nth-child(3):hover span {
     text-align: center;
     width: 100%;
 }
-    .certificados{
+ .certificados{
     border: 10px inset rgba(0, 0, 0, 0.653);
-    height: 40vh;
+    height: 37vh;
     margin-left: 10%;
-    width: 50vw;
+    width: 52vw;
 }
 .textos{
     font-family: 'realeway';
